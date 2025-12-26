@@ -1,0 +1,21 @@
+{
+  "name": "renovate-config",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node --experimental-strip-types bin/update-config.ts",
+    "test": "RENOVATE_CONFIG_FILE=config/index.json5 renovate-config-validator"
+  },
+  "dependencies": {
+    "@octokit/rest": "22.0.1"
+  },
+  "devDependencies": {
+    "@slashnephy/eslint-config": "3.0.130",
+    "eslint": "9.39.2",
+    "renovate": "42.66.8",
+    "typescript": "5.9.3"
+  },
+  "packageManager": "pnpm@11.0.0-dev.1005+sha512.91f84a392eea348ea4852a182912d2520273a4336f933b78cc44bc931eb999923c097e9433a9b355adc1f725725ea99082fc9f032a559df832632e764c92c798"
+}
