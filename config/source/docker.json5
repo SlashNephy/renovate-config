@@ -1,0 +1,15 @@
+{
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+  extends: [
+    'regexManagers:dockerfileVersions'
+  ],
+  hostRules: [
+    {
+      hostType: 'docker',
+      matchHost: 'ghcr.io',
+      username: 'starrybluesky-bot',
+      // https://developer.mend.io/github/SlashNephy/-/settings
+      password: '{{ secrets.RENOVATE_GITHUB_TOKEN }}',
+    },
+  ],
+}
