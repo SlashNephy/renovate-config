@@ -7,16 +7,16 @@
     "build": "tsc",
     "lint": "eslint",
     "lint:ci": "eslint -f @microsoft/eslint-formatter-sarif",
-    "start": "node --experimental-strip-types bin/update-config.ts",
     "test": "RENOVATE_CONFIG_FILE=presets/default.json5 renovate-config-validator --strict"
   },
   "dependencies": {
+    "@octokit/request-error": "7.1.0",
     "@octokit/rest": "22.0.1",
     "zod": "4.2.1"
   },
   "devDependencies": {
     "@slashnephy/eslint-config": "3.0.133",
-    "@types/node": "24.1.0",
+    "@types/node": "24.10.4",
     "eslint": "9.39.2",
     "renovate": "42.66.8",
     "typescript": "5.9.3"
