@@ -8,7 +8,7 @@
     "lint": "eslint",
     "lint:ci": "eslint -f @microsoft/eslint-formatter-sarif",
     "start": "node --experimental-strip-types bin/update-config.ts",
-    "test": "RENOVATE_CONFIG_FILE=config/index.json5 renovate-config-validator --strict"
+    "test": "RENOVATE_CONFIG_FILE=presets/default.json5 renovate-config-validator --strict"
   },
   "dependencies": {
     "@octokit/rest": "22.0.1",

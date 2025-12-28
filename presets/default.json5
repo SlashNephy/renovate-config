@@ -1,0 +1,93 @@
+{
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+  extends: [
+    ':timezone(Asia/Tokyo)',
+    'config:best-practices',
+    // config:best-practices に helpers:pinGitHubActionDigests が含まれるが拡張する
+    // https://docs.renovatebot.com/presets-helpers/#helperspingithubactiondigeststosemver
+    'helpers:pinGitHubActionDigestsToSemver',
+    // 制限解除
+    ':prConcurrentLimitNone',
+    ':prHourlyLimitNone',
+    ':disableRateLimiting',
+    // ロックファイルの更新は週次にまとめる
+    ':maintainLockFilesWeekly',
+    // Custom Manager
+    // https://docs.renovatebot.com/presets-customManagers/
+    'customManagers:dockerfileVersions',
+    'customManagers:githubActionsVersions',
+    'customManagers:helmChartYamlAppVersions',
+    'customManagers:makefileVersions',
+    'customManagers:tfvarsVersions',
+    'customManagers:tsconfigNodeVersions',
+  ],
+  printConfig: true,
+  addLabels: [
+    'renovate'
+  ],
+  suppressNotifications: [
+    'prIgnoreNotification',
+  ],
+  // リリースから3日以上経ったパッケージのみ適用する
+  minimumReleaseAge: '3 days',
+  minimumReleaseAgeBehaviour: 'timestamp-optional',
+  // minimumReleaseAge 等を満たしていない場合でも PR を作成する
+  internalChecksFilter: 'none',
+  prCreation: 'immediate',
+  // Auto Merge
+  automerge: true,
+  platformAutomerge: true,
+  hostRules: [
+    {
+      hostType: 'docker',
+      matchHost: 'ghcr.io',
+      username: 'starrybluesky-bot',
+      // https://developer.mend.io/github/SlashNephy/-/settings
+      password: '{{ secrets.RENOVATE_GITHUB_TOKEN}}',
+    },
+  ],
+  packageRules: [
+    // メジャーアップデートは自動マージせず、人間に依頼する
+    {
+      matchUpdateTypes: [
+        'major'
+      ],
+      automerge: false,
+      extends: [
+        ':assignAndReview(SlashNephy)',
+      ],
+    },
+    // Go
+    {
+      matchCategories: [
+        'golang',
+      ],
+      postUpdateOptions: [
+        'gomodTidy',
+        'gomodUpdateImportPaths',
+        'goGenerate',
+      ],
+      allowedUnsafeExecutions: [
+        'goGenerate'
+      ],
+    },
+  ],
+  vulnerabilityAlerts: {
+    addLabels: [
+      'security'
+    ],
+    extends: [
+      ':assignAndReview(SlashNephy)',
+    ],
+  },
+  // Kubernetes
+  kubernetes: {
+    managerFilePatterns: [
+      '\\.yaml$'
+    ],
+    pinDigests: true,
+  },
+  kustomize: {
+    pinDigests: true,
+  },
+}
