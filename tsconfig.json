@@ -19,6 +19,9 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "allowImportingTsExtensions": true,
-    "emitDeclarationOnly": true
-  }
+    "noEmit": true
+  },
+  "exclude": [
+    "eslint.config.mts"
+  ]
 }
