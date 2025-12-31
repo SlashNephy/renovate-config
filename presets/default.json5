@@ -37,15 +37,6 @@
   // Auto Merge
   automerge: true,
   platformAutomerge: true,
-  hostRules: [
-    {
-      hostType: 'docker',
-      matchHost: 'ghcr.io',
-      username: 'starrybluesky-bot',
-      // https://developer.mend.io/github/SlashNephy/-/settings
-      password: '{{ secrets.RENOVATE_GITHUB_TOKEN}}',
-    },
-  ],
   packageRules: [
     // メジャーアップデートは自動マージせず、人間に依頼する
     {
