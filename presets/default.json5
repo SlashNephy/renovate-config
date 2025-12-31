@@ -71,6 +71,13 @@
         'goGenerate'
       ],
     },
+    // Dockerfile フロントエンドは Digest 固定不要にする
+    {
+      matchPackageNames: [
+        'docker/dockerfile',
+      ],
+      pinDigests: false,
+    },
   ],
   vulnerabilityAlerts: {
     addLabels: [
