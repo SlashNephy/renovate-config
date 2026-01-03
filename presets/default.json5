@@ -81,7 +81,7 @@
   // Kubernetes
   kubernetes: {
     managerFilePatterns: [
-      '\\.yaml$'
+      '/\\.ya?ml$/',
     ],
     pinDigests: true,
   },
