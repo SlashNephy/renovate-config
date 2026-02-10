@@ -28,8 +28,8 @@ importers:
         specifier: 9.39.2
         version: 9.39.2(jiti@2.6.1)
       renovate:
-        specifier: 43.4.1
-        version: 43.4.1(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 43.4.2
+        version: 43.4.2(encoding@0.1.13)(typanion@3.14.0)
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -2178,8 +2178,8 @@ packages:
   color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
 
-  commander@14.0.2:
-    resolution: {integrity: sha512-TywoWNNRbhoD0BXs1P3ZEScW8W5iKrnbithIl0YH+uCmBd0QpPOA8yc82DS3BIE5Ma6FnBVUsJ7wVUDz4dvOWQ==}
+  commander@14.0.3:
+    resolution: {integrity: sha512-H+y0Jo/T1RZ9qPP4Eh1pkcQcLRglraJaSLoyOtHxu6AapkjWVCy2Sit1QQ4x3Dng8qDlSsZEet7g5Pq06MvTgw==}
     engines: {node: '>=20'}
 
   comment-parser@1.4.5:
@@ -4345,8 +4345,8 @@ packages:
   remove-trailing-separator@1.1.0:
     resolution: {integrity: sha512-/hS+Y0u3aOfIETiaiirUFwDBDzmXPvO+jAfKTitUngIPzdKc6Z0LoFjM/CK5PL4C+eKwHohlHAb6H0VFfmmUsw==}
 
-  renovate@43.4.1:
-    resolution: {integrity: sha512-YLTBxmGA+g9sLAC7MW6qxww+07udMEZgyG36IqWS+NehKpr2N2KfCpEMNbSiR2MBTiX7buKnmcb/cY56gn3iBQ==}
+  renovate@43.4.2:
+    resolution: {integrity: sha512-h6P5SAbwj7GXJ442wMA6R0WcQuP3AA/FppHQO071D+xXU2hNazieQ4hlSMUbNKO7/ojT6vlAye8AT7JPdug5jA==}
     engines: {node: ^24.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -8341,7 +8341,7 @@ snapshots:
 
   color-name@1.1.4: {}
 
-  commander@14.0.2: {}
+  commander@14.0.3: {}
 
   comment-parser@1.4.5: {}
 
@@ -8566,7 +8566,7 @@ snapshots:
   editorconfig@3.0.1:
     dependencies:
       '@one-ini/wasm': 0.2.0
-      commander: 14.0.2
+      commander: 14.0.3
       minimatch: 10.0.1
       semver: 7.7.4
 
@@ -11016,7 +11016,7 @@ snapshots:
 
   remove-trailing-separator@1.1.0: {}
 
-  renovate@43.4.1(encoding@0.1.13)(typanion@3.14.0):
+  renovate@43.4.2(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.980.0
       '@aws-sdk/client-ec2': 3.980.0
@@ -11064,7 +11064,7 @@ snapshots:
       cacache: 20.0.3
       changelog-filename-regex: 2.0.1
       clean-git-ref: 2.0.1
-      commander: 14.0.2
+      commander: 14.0.3
       conventional-commits-detector: 1.0.3
       croner: 9.1.0
       cronstrue: 3.11.0
