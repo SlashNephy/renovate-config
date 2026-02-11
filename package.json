@@ -18,7 +18,7 @@
     "@slashnephy/eslint-config": "3.0.196",
     "@types/node": "24.10.11",
     "eslint": "9.39.2",
-    "renovate": "43.4.2",
+    "renovate": "43.4.3",
     "typescript": "5.9.3"
   },
   "packageManager": "pnpm@10.29.1+sha512.48dae233635a645768a3028d19545cacc1688639eeb1f3734e42d6d6b971afbf22aa1ac9af52a173d9c3a20c15857cfa400f19994d79a2f626fcc73fccda9bbc"
