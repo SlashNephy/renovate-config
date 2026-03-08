@@ -17,7 +17,7 @@
   "devDependencies": {
     "@slashnephy/eslint-config": "3.0.247",
     "@types/node": "24.11.0",
-    "eslint": "9.39.3",
+    "eslint": "10.0.2",
     "renovate": "43.52.0",
     "typescript": "5.9.3"
   },
