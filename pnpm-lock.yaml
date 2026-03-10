@@ -19,8 +19,8 @@ importers:
         version: 4.3.6
     devDependencies:
       '@slashnephy/eslint-config':
-        specifier: 3.0.250
-        version: 3.0.250(@types/estree@1.0.8)(@types/node@24.12.0)(@typescript-eslint/eslint-plugin@8.56.1(@typescript-eslint/parser@8.56.1(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/parser@8.56.1(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.4(jiti@2.6.1))(storybook@10.2.16(@testing-library/dom@10.4.1)(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))
+        specifier: 3.0.252
+        version: 3.0.252(@types/estree@1.0.8)(@types/node@24.12.0)(@typescript-eslint/eslint-plugin@8.56.1(@typescript-eslint/parser@8.56.1(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/parser@8.56.1(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.4(jiti@2.6.1))(storybook@10.2.16(@testing-library/dom@10.4.1)(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))
       '@types/node':
         specifier: 24.12.0
         version: 24.12.0
@@ -1177,8 +1177,8 @@ packages:
     resolution: {integrity: sha512-P1Cz1dWaFfR4IR+U13mqqiGsLFf1KbayybWwdd2vfctdV6hDpUkgCY0nKOLLTMSoRd/jJNjtbqzf13K8DCCXQw==}
     engines: {node: '>=18'}
 
-  '@slashnephy/eslint-config@3.0.250':
-    resolution: {integrity: sha512-iL196Vepgs9OjbS3l/AyF+q6y9h0kKbbdDYY2qTYUP7P8uXcFFdkCtI0kJd9YbXBJosmZAWE/7R9xQ3GvUk2jg==}
+  '@slashnephy/eslint-config@3.0.252':
+    resolution: {integrity: sha512-AhjzP5nAKdrP2TGfv/846VfrmY+KrBNawz7RH1dy2v5XM2US2is5XPdmgtf6LsSIUJDLDHV/71UJGy3WVVd7fQ==}
     engines: {node: '>= 24'}
     peerDependencies:
       eslint: ^9
@@ -2608,11 +2608,11 @@ packages:
   eslint-plugin-relay@2.0.0:
     resolution: {integrity: sha512-H52u+YM72VhBwhKrGSSdsjbeAWbLIgmph3z4Hgfyqm8Jt5pP5g9PbFmBp8kk10D4vZldrbNwa0esHxDRoczprg==}
 
-  eslint-plugin-storybook@10.2.14:
-    resolution: {integrity: sha512-iFHN+hs2DQsY0KZssb9Dse5MVFT22E/f6BK9bShGq21TXv/z2+ix72NfIFTWg3sLFoEXr18uGWZiM5e3jt1EqQ==}
+  eslint-plugin-storybook@10.2.15:
+    resolution: {integrity: sha512-hGOLOaXKTSc/ByJ/borOWTQt3vsog99YFnXlUHAFZzJzeLPS6TAUHOlbll0kYePcURsEl9FePryyt04tX+/9Ig==}
     peerDependencies:
       eslint: '>=8'
-      storybook: ^10.2.14
+      storybook: ^10.2.15
 
   eslint-plugin-tsdoc@0.5.2:
     resolution: {integrity: sha512-BlvqjWZdBJDIPO/YU3zcPCF23CvjYT3gyu63yo6b609NNV3D1b6zceAREy2xnweuBoDpZcLNuPyAUq9cvx6bbQ==}
@@ -2636,8 +2636,8 @@ packages:
     resolution: {integrity: sha512-L5oYaD//ZE7fKNtWUfVgYTRW19jrZlvaHe2swyFLxXQ5pwVQLivi5m92rtXd/ww8yqg4Drasqyi0hlBmhf9YQg==}
     engines: {node: '>=0.10.0'}
 
-  eslint-plugin-yml@3.3.0:
-    resolution: {integrity: sha512-kRja5paNrMfZnbNqDbZSFrSHz5x7jmGBQq7d6z/+wRvWD4Y0yb1fbjojBg3ReMewFhBB7nD2nPC86+m3HmILJA==}
+  eslint-plugin-yml@3.3.1:
+    resolution: {integrity: sha512-isntsZchaTqDMNNkD+CakrgA/pdUoJ45USWBKpuqfAW1MCuw731xX/vrXfoJFZU3tTFr24nCbDYmDfT2+g4QtQ==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24.0.0}
     peerDependencies:
       eslint: '>=9.38.0'
@@ -6942,7 +6942,7 @@ snapshots:
 
   '@sindresorhus/is@7.2.0': {}
 
-  '@slashnephy/eslint-config@3.0.250(@types/estree@1.0.8)(@types/node@24.12.0)(@typescript-eslint/eslint-plugin@8.56.1(@typescript-eslint/parser@8.56.1(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/parser@8.56.1(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.4(jiti@2.6.1))(storybook@10.2.16(@testing-library/dom@10.4.1)(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))':
+  '@slashnephy/eslint-config@3.0.252(@types/estree@1.0.8)(@types/node@24.12.0)(@typescript-eslint/eslint-plugin@8.56.1(@typescript-eslint/parser@8.56.1(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/parser@8.56.1(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.4(jiti@2.6.1))(storybook@10.2.16(@testing-library/dom@10.4.1)(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))':
     dependencies:
       '@eslint-community/eslint-plugin-eslint-comments': 4.7.1(eslint@9.39.4(jiti@2.6.1))
       '@eslint/js': 9.39.3
@@ -6967,12 +6967,12 @@ snapshots:
       eslint-plugin-react-hooks: 7.0.1(eslint@9.39.4(jiti@2.6.1))
       eslint-plugin-react-refresh: 0.5.2(eslint@9.39.4(jiti@2.6.1))
       eslint-plugin-relay: 2.0.0
-      eslint-plugin-storybook: 10.2.14(eslint@9.39.4(jiti@2.6.1))(storybook@10.2.16(@testing-library/dom@10.4.1)(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3)
+      eslint-plugin-storybook: 10.2.15(eslint@9.39.4(jiti@2.6.1))(storybook@10.2.16(@testing-library/dom@10.4.1)(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3)
       eslint-plugin-tsdoc: 0.5.2(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3)
       eslint-plugin-unused-imports: 4.4.1(@typescript-eslint/eslint-plugin@8.56.1(@typescript-eslint/parser@8.56.1(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.4(jiti@2.6.1))
       eslint-plugin-userscripts: 0.5.6(eslint@9.39.4(jiti@2.6.1))
       eslint-plugin-xss: 0.1.12
-      eslint-plugin-yml: 3.3.0(eslint@9.39.4(jiti@2.6.1))
+      eslint-plugin-yml: 3.3.1(eslint@9.39.4(jiti@2.6.1))
       globals: 17.4.0
       graphql: 16.13.0
       jsonc-eslint-parser: 3.1.0
@@ -8720,7 +8720,7 @@ snapshots:
     dependencies:
       graphql: 16.13.0
 
-  eslint-plugin-storybook@10.2.14(eslint@9.39.4(jiti@2.6.1))(storybook@10.2.16(@testing-library/dom@10.4.1)(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3):
+  eslint-plugin-storybook@10.2.15(eslint@9.39.4(jiti@2.6.1))(storybook@10.2.16(@testing-library/dom@10.4.1)(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3):
     dependencies:
       '@typescript-eslint/utils': 8.56.1(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3)
       eslint: 9.39.4(jiti@2.6.1)
@@ -8754,7 +8754,7 @@ snapshots:
     dependencies:
       requireindex: 1.1.0
 
-  eslint-plugin-yml@3.3.0(eslint@9.39.4(jiti@2.6.1)):
+  eslint-plugin-yml@3.3.1(eslint@9.39.4(jiti@2.6.1)):
     dependencies:
       '@eslint/core': 1.1.1
       '@eslint/plugin-kit': 0.6.1
