@@ -28,8 +28,8 @@ importers:
         specifier: 9.39.4
         version: 9.39.4(jiti@2.6.1)
       renovate:
-        specifier: 43.139.8
-        version: 43.139.8(typanion@3.14.0)
+        specifier: 43.140.0
+        version: 43.140.0(typanion@3.14.0)
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -4166,8 +4166,8 @@ packages:
   remove-trailing-separator@1.1.0:
     resolution: {integrity: sha512-/hS+Y0u3aOfIETiaiirUFwDBDzmXPvO+jAfKTitUngIPzdKc6Z0LoFjM/CK5PL4C+eKwHohlHAb6H0VFfmmUsw==}
 
-  renovate@43.139.8:
-    resolution: {integrity: sha512-tdAE0MhDYTku60EsFfqLcX+Q+I/QRUdBsB/747UCJy/lnRg4R+7RKms7ihy5lhpriDOeusD/fLZjD+27nQdykg==}
+  renovate@43.140.0:
+    resolution: {integrity: sha512-ynR7Wp8r89JgvOOl9La7hDXGRj4IDiT/UoOg9eDDZt2gSZqlRU6zTkp/NQzhSumJbIWYr7tKVkRImtiBtO8jFA==}
     engines: {node: ^24.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -10421,7 +10421,7 @@ snapshots:
 
   remove-trailing-separator@1.1.0: {}
 
-  renovate@43.139.8(typanion@3.14.0):
+  renovate@43.140.0(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.1021.0
       '@aws-sdk/client-ec2': 3.1021.0
