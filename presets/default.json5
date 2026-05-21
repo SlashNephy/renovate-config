@@ -28,25 +28,22 @@
   suppressNotifications: [
     'prIgnoreNotification',
   ],
-  // リリースから3日以上経ったパッケージのみ適用する
-  minimumReleaseAge: '3 days',
+  // リリースから7日以上経ったパッケージのみ適用する
+  minimumReleaseAge: '7 days',
   minimumReleaseAgeBehaviour: 'timestamp-optional',
-  // minimumReleaseAge 等を満たしていない場合でも PR を作成する
-  internalChecksFilter: 'none',
-  prCreation: 'immediate',
+  // minimumReleaseAge を満たしたら PR を作成
+  internalChecksFilter: 'strict',
+  prCreation: 'not-pending',
   // Auto Merge
   automerge: true,
   platformAutomerge: true,
   packageRules: [
-    // メジャーアップデートは自動マージせず、人間に依頼する
+    // メジャーアップデートは自動マージしない
     {
       matchUpdateTypes: [
         'major'
       ],
       automerge: false,
-      extends: [
-        ':assignAndReview(SlashNephy)',
-      ],
     },
     // Go
     {
