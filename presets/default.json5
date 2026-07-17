@@ -59,6 +59,15 @@
         'goGenerate'
       ],
     },
+    // npm
+    {
+      matchDatasources: [
+        'npm',
+      ],
+      postUpdateOptions: [
+        'pnpmDedupe',
+      ],
+    },
     // Dockerfile フロントエンドは Digest 固定不要にする
     {
       matchPackageNames: [
