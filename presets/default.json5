@@ -31,9 +31,14 @@
   // リリースから7日以上経ったパッケージのみ適用する
   minimumReleaseAge: '7 days',
   minimumReleaseAgeBehaviour: 'timestamp-optional',
-  // minimumReleaseAge を満たしたら PR を作成
+  // minimumReleaseAge を満たした更新のみブランチに含める
   internalChecksFilter: 'strict',
-  prCreation: 'not-pending',
+  // prCreation: 'not-pending' は使わない。CI が pull_request でしか発火しないリポジトリでは
+  // 「PR がないとチェックが走らない → ブランチが緑にならない → PR が作られない」で永久に停止する。
+  // 加えて minimumReleaseAge を満たすと stabilityStatus が green になり、
+  // 下記の条件が常に真となって prNotPendingHours によるタイムアウト救済も効かない。
+  // https://github.com/renovatebot/renovate/blob/44.3.2/lib/workers/repository/update/pr/index.ts#L258
+  prCreation: 'immediate',
   // Auto Merge
   automerge: true,
   platformAutomerge: true,
