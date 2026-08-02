@@ -29,11 +29,18 @@
     'prIgnoreNotification',
   ],
   // リリースから7日以上経ったパッケージのみ適用する
+  // ただし releaseTimestamp を返さないデータソース（Docker Hub 以外のレジストリ、digest 更新など）は
+  // timestamp-optional により年齢判定を素通りする
   minimumReleaseAge: '7 days',
   minimumReleaseAgeBehaviour: 'timestamp-optional',
-  // minimumReleaseAge を満たしたら PR を作成
+  // 年齢判定を通らなかった更新はブランチ作成の段階で除外する
   internalChecksFilter: 'strict',
-  prCreation: 'not-pending',
+  // prCreation: 'not-pending' は使わない。CI が pull_request でしか発火しないリポジトリでは
+  // ブランチに renovate/ 内部チェックしか付かず、ブランチステータスが永久に yellow のままとなる。
+  // さらに minimumReleaseAge を満たすと stabilityStatus が green になり、
+  // 下記の条件が常に真となって prNotPendingHours によるタイムアウト救済も効かない。
+  // https://github.com/renovatebot/renovate/blob/44.3.2/lib/workers/repository/update/pr/index.ts#L258
+  prCreation: 'immediate',
   // Auto Merge
   automerge: true,
   platformAutomerge: true,
