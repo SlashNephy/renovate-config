@@ -67,9 +67,19 @@
       ],
     },
     // npm
+    // pnpmDedupe は個別の依存更新では実行しない。ロックファイル生成に加えて `pnpm dedupe` が
+    // 走るため 1 ブランチあたりの所要時間がおよそ倍になり、依存の多いリポジトリでは
+    // Renovate 実行の 30 分制限に到達して全体が完走しなくなる。
+    // 重複解消は :maintainLockFilesWeekly による週次のロックファイル保守にまとめる。
+    // https://github.com/SlashNephy/nebula/issues/2016
     {
-      matchDatasources: [
+      // ロックファイル保守の更新には datasource が付かない（依存単位の更新ではないため）ので
+      // matchDatasources ではなく matchManagers で絞る。pnpm-lock.yaml は npm manager が扱う。
+      matchManagers: [
         'npm',
+      ],
+      matchUpdateTypes: [
+        'lockFileMaintenance',
       ],
       postUpdateOptions: [
         'pnpmDedupe',
