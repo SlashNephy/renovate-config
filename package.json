@@ -10,7 +10,7 @@
     "test": "RENOVATE_CONFIG_FILE=presets/default.json5 renovate-config-validator --strict"
   },
   "dependencies": {
-    "@octokit/request-error": "7.1.0",
+    "@octokit/request-error": "7.1.1",
     "@octokit/rest": "22.0.1",
     "zod": "4.4.3"
   },
