@@ -15,7 +15,7 @@
     "zod": "4.4.3"
   },
   "devDependencies": {
-    "@slashnephy/eslint-config": "3.0.307",
+    "@slashnephy/eslint-config": "3.0.366",
     "@types/node": "24.13.3",
     "eslint": "9.39.5",
     "renovate": "43.288.0",
